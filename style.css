@@ -1,0 +1,126 @@
+body {
+    background-color: #f0c7d4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDA3BA;
+    border-bottom: 2px solid red;
+    padding: 20px;
+
+    /* Header beim Scrollen oben verankern */
+    position: sticky;
+    top: 0;
+}
+
+header img {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 80px;
+}
+
+/* Wenn Maus auf <img> kommt, wird das Element vergrößert */
+header img:hover {
+    transform: scale(1.5);
+}
+
+header nav {
+    display: flex;
+}
+
+header a {
+    padding: 10px;
+    color: antiquewhite;
+    cursor: pointer;
+    /*Mauszeiger wird zu Hand */
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    border-radius: 50px;
+    white-space: nowrap;
+
+}
+
+/* Wenn Maus auf <a>-Element kommt wird folgendes styling verwendet */
+header a:hover {
+    background-color: #f03a73;
+
+}
+
+.index_main {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: larger;
+}
+
+.index_main img {
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+.produkte_main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px calc((100% - (340px * 3)) / 2);
+    /* https://stackoverflow.com/questions/48464444/how-to-display-3-items-per-row-in-flexbox */
+}
+
+.produkte_main section {
+    width: 300px;
+    max-width: 300px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 0px #c4bcbc;
+    border-radius: 30px;
+    background-color: #f8dfe6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex: 0 0 300px;
+
+}
+
+.produkte_main img {
+    width: 250px;
+    height: 250px;
+}
+
+.produkte_main h2 {
+    color: #f3abc2;
+    padding: 0px;
+    margin: 0px;
+}
+
+.produkte_main p {
+    color: #907E82;
+    width: 200px;
+    font-size: large;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top: 2px solid red;
+    background-color: #EDA3BA;
+    white-space: nowrap;
+    margin-top: auto;
+}
+
+footer h3 {
+    margin: 15px;
+}
